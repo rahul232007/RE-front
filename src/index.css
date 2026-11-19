@@ -918,7 +918,7 @@ input:disabled, select:disabled, textarea:disabled { opacity: 0.5; cursor: not-a
 .navbar__brand-logo {
   width: 5.25rem;
   height: 3.25rem;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   border-radius: 0.35rem;
 }
@@ -1040,7 +1040,7 @@ input:disabled, select:disabled, textarea:disabled { opacity: 0.5; cursor: not-a
 .footer-brand-logo {
   width: 5.25rem;
   height: 4.75rem;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   border-radius: 0.35rem;
 }
