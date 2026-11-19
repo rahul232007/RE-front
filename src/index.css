@@ -916,8 +916,10 @@ input:disabled, select:disabled, textarea:disabled { opacity: 0.5; cursor: not-a
 }
 .navbar__brand:hover { text-decoration: none; }
 .navbar__brand-logo {
-  width: 5.25rem;
-  height: 3.25rem;
+  width: clamp(6.25rem, 24vw, 8.75rem);
+  height: auto;
+  aspect-ratio: 7 / 3;
+  flex: 0 0 auto;
   object-fit: contain;
   object-position: center;
   border-radius: 0.35rem;
@@ -1038,8 +1040,9 @@ input:disabled, select:disabled, textarea:disabled { opacity: 0.5; cursor: not-a
   text-decoration: none;
 }
 .footer-brand-logo {
-  width: 5.25rem;
-  height: 4.75rem;
+  width: 8.75rem;
+  height: auto;
+  flex: 0 0 auto;
   object-fit: contain;
   object-position: center;
   border-radius: 0.35rem;
