@@ -1,7 +1,6 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
-import RELogo from './RELogo';
 import toast from 'react-hot-toast';
 
 /**
@@ -35,7 +34,11 @@ const Navbar = () => {
       <div className="navbar__inner">
         {/* Brand */}
         <Link to="/" className="navbar__brand">
-          <RELogo size={36} withWings={false} className="navbar__brand-logo" />
+          <img
+            src="/rahul-enterprises-logo.png"
+            alt="Rahul Enterprises"
+            className="navbar__brand-logo"
+          />
           <span>
             <span className="navbar__brand-name">Rahul</span>
             <span className="navbar__brand-suffix"> Enterprises</span>

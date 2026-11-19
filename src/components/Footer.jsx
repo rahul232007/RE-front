@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import RELogo from './RELogo';
 import { CONTACT_INFO } from '../config/contactConfig';
 import { MapPin, Phone, Mail } from 'lucide-react';
 
@@ -26,7 +25,11 @@ const Footer = () => (
         {/* Col 1: Brand & Vision */}
         <div className="footer-col footer-col--brand">
           <Link to="/" className="footer-brand-title">
-            <RELogo size={42} withWings={false} />
+            <img
+              src="/rahul-enterprises-logo.png"
+              alt="Rahul Enterprises"
+              className="footer-brand-logo"
+            />
             <div>
               <span className="brand-name-cobalt">RAHUL</span>{' '}
               <span className="brand-name-gold">ENTERPRISES</span>
